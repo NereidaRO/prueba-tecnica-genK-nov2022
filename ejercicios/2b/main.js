@@ -42,6 +42,11 @@ function handleExercise(array) {
   stringify(result);
 }
 
-handleExercise(firstRow);
-handleExercise(secondRow);
-handleExercise(thirdRow);
+const firstRowTwo = handleExercise(firstRow);
+const secondRowTwo = handleExercise(secondRow);
+const thirdRowTwo = handleExercise(thirdRow);
+
+const finalArray = [firstRowTwo, secondRowTwo, thirdRowTwo];
+
+/*he entendido el ejercicio como que había que hacer 3 strings, una para cada subarray, ya que
+el array result, el original, tiene 3 subarrays*/
