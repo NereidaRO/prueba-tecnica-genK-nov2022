@@ -3,10 +3,10 @@
 const body = document.querySelector(".js-body");
 let html = "";
 function handleHoverIn(ev) {
-  ev.currentTarget.innerHTML = `${html}N`;
+  ev.currentTarget.innerHTML = `buttoN`;
 }
 function handleHoverOut(ev) {
-  ev.currentTarget.innerHTML = `${html}n`;
+  ev.currentTarget.innerHTML = `button`;
 }
 
 renderButton();
@@ -14,7 +14,6 @@ renderButton();
 function renderButton() {
   for (let i = 1; i <= 1000; i++) {
     html += `<button class="js-button">${i} botón</button>`;
-
     body.innerHTML = `${html}`;
     const buttonArray = document.querySelectorAll(".js-button");
     for (let button of buttonArray) {
@@ -24,4 +23,6 @@ function renderButton() {
   }
 }
 
-//para que ponga el evento en todos los botones, hay que arrayficarlos
+/*falta descubrir cómo insertar el número, ya que es el índice del bucle pero, si meto la descripción
+de la función dentro, el evento siempre sucederá en 1000, así que todos los botones serán 1000 botón o
+1000 botóN*/
