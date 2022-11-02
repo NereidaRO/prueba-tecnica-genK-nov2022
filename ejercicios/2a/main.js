@@ -18,3 +18,13 @@ const array2 = [
 //column: array[i] de cada array[i] fusionados
 
 let arrayOfColumns = [];
+
+for (let row of array2) {
+  for (let number of row) {
+    arrayOfColumns.push(number);
+  }
+}
+
+console.log(arrayOfColumns);
+
+//sale un array lineal con todos los números de array2, no vale
