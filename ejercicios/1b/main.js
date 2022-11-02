@@ -1,12 +1,14 @@
 "use strict";
 
-const body = document.querySelector(".js-body");
-const button = document.querySelector(".js-oneButton");
+renderButton();
 
-body.innerHTML = `<button class="js-oneButton">1 botón</button>`;
-
-function handleHover() {
-  body.innerHTML = `<button class="js-oneButton">1 botóN</button>`;
+function handleHoverIn(ev) {
+  ev.currentTarget.innerHTML = `1 botóN`;
 }
 
-button.addEventListener("mouseover", handleHover());
+function renderButton() {
+  const body = document.querySelector(".js-body");
+  body.innerHTML = `<button class="js-oneButton">1 botón</button>`;
+  const button = document.querySelector(".js-oneButton");
+  button.addEventListener("mouseover", handleHoverIn(button));
+}
