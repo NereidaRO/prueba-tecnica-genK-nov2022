@@ -17,7 +17,7 @@ const result = [
   [40, 54, 56],
 ];
 
-//NOTA: result está calculada a mano, si logro hacerlo con JS, lo pondré en el ejercicio 2a
+//NOTA: result está calculada a mano, si logro hacerlo con JS lo pondré en el ejercicio 2a
 
 let thirdRow = result.pop();
 
