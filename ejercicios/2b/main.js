@@ -32,7 +32,7 @@ function stringify(array) {
 function complete(array) {
   for (let number of array) {
     if (number.length < 3) {
-      return (number = number + "0");
+      return (number = `0${number}`);
     }
   }
 }
